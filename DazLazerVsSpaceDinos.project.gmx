@@ -6,42 +6,193 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\Ship</sprite>
     <sprite>sprites\Star</sprite>
-    <sprite>sprites\FlameLong</sprite>
-    <sprite>sprites\FlameMedium</sprite>
-    <sprite>sprites\FlameShort</sprite>
-    <sprite>sprites\Astroid1</sprite>
-    <sprite>sprites\sprite11</sprite>
-    <sprite>sprites\AstroidHaze</sprite>
     <sprites name="PlaceHolders">
       <sprite>sprites\Block</sprite>
       <sprite>sprites\ParticleSystem</sprite>
       <sprite>sprites\Spawner</sprite>
     </sprites>
+    <sprites name="Astroids">
+      <sprite>sprites\Astroid_S1</sprite>
+      <sprite>sprites\Astroid_S2</sprite>
+      <sprite>sprites\Astroid_S3</sprite>
+      <sprite>sprites\Astroid_S4</sprite>
+      <sprite>sprites\Astroid_S5</sprite>
+      <sprite>sprites\Astroid_S6</sprite>
+      <sprite>sprites\AstroidHaze</sprite>
+    </sprites>
+    <sprites name="Explosion">
+      <sprite>sprites\Exp_T1</sprite>
+      <sprite>sprites\Exp_T2</sprite>
+      <sprite>sprites\Exp_T3</sprite>
+      <sprite>sprites\Exp_M1</sprite>
+      <sprite>sprites\Exp_M2</sprite>
+      <sprite>sprites\Exp_M3</sprite>
+      <sprite>sprites\Exp_B1</sprite>
+      <sprite>sprites\Exp_B2</sprite>
+      <sprite>sprites\Exp_B3</sprite>
+      <sprite>sprites\LazerSpark_Sprite</sprite>
+    </sprites>
+    <sprites name="PlayerObjects">
+      <sprite>sprites\Ship</sprite>
+      <sprite>sprites\ShipHit</sprite>
+      <sprite>sprites\Ship100</sprite>
+      <sprite>sprites\Ship100Hit</sprite>
+      <sprite>sprites\Ship50</sprite>
+      <sprite>sprites\Ship50Hit</sprite>
+      <sprite>sprites\Lives</sprite>
+      <sprite>sprites\ShipFlash</sprite>
+      <sprite>sprites\FlameMedium</sprite>
+      <sprite>sprites\FlameShort</sprite>
+      <sprite>sprites\FlameLong</sprite>
+      <sprites name="Weapons">
+        <sprite>sprites\ShipGuns</sprite>
+        <sprite>sprites\ShipShotGuns</sprite>
+        <sprite>sprites\ShipLazers</sprite>
+        <sprite>sprites\ShipSnipers</sprite>
+        <sprites name="Ammo">
+          <sprite>sprites\Gun_Shot</sprite>
+        </sprites>
+      </sprites>
+    </sprites>
+    <sprites name="Planets">
+      <sprite>sprites\PlanetHalon</sprite>
+    </sprites>
+    <sprites name="BadGuys">
+      <sprite>sprites\BadGuy</sprite>
+      <sprites name="Ammo">
+        <sprite>sprites\RedShot_SPT</sprite>
+        <sprite>sprites\RedShotLarger_Sprite</sprite>
+        <sprite>sprites\Bullet</sprite>
+        <sprite>sprites\BadGuyMissleSmaller_Sprite</sprite>
+      </sprites>
+      <sprite>sprites\Spinner_Sprite</sprite>
+      <sprite>sprites\BadGuyShotGun</sprite>
+      <sprites name="BadGuyLarge">
+        <sprite>sprites\BadGuyLargeDamage_Sprite</sprite>
+        <sprite>sprites\BadGuyLarge100_Damage_Sprite</sprite>
+        <sprite>sprites\BadGuyLarge50_Damage_Sprite</sprite>
+        <sprite>sprites\BadGuyLarge100_Sprite</sprite>
+        <sprite>sprites\BadGuyLarger50_Sprite</sprite>
+        <sprite>sprites\BadGuyLarger_Sprite</sprite>
+      </sprites>
+      <sprites name="BadGuyAttacker">
+        <sprite>sprites\BadGuyAttackerDamaged_Sprite</sprite>
+        <sprite>sprites\BadGuyAttackerDamage_Sprite_Hit</sprite>
+        <sprite>sprites\BadGuyAttacker_Sprite</sprite>
+        <sprite>sprites\BadGuyAttacker_Sprite_Hit</sprite>
+      </sprites>
+      <sprites name="BadGuyTurrent">
+        <sprite>sprites\TurrentGuns</sprite>
+        <sprite>sprites\TurrentMissleHolder</sprite>
+        <sprite>sprites\TurrentMissle_Sprite</sprite>
+        <sprite>sprites\TurrenMissleHolderLoaded</sprite>
+        <sprite>sprites\HoverTurrent</sprite>
+      </sprites>
+      <sprites name="BadGuyMisc">
+        <sprite>sprites\BadGuySpawner</sprite>
+        <sprite>sprites\BadGuyFlame_Sprite</sprite>
+      </sprites>
+      <sprites name="BadGuyLazerShip">
+        <sprite>sprites\BadGuyLazerShip_Sprite</sprite>
+        <sprite>sprites\BadGuyLazerShipHit_Sprite</sprite>
+        <sprite>sprites\BadGuyLazerShip50_Sprite</sprite>
+        <sprite>sprites\BadGuyLazerShip50Hit_Sprite</sprite>
+        <sprite>sprites\BadGuyLazerShip100_Sprite</sprite>
+        <sprite>sprites\BadGuyLazerShip100Hit_Sprite</sprite>
+      </sprites>
+      <sprite>sprites\BadGuyLazer_Sprite</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\StarField</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\BadGuyPath</path>
+    <path>paths\LargeBadGuyPath</path>
+    <path>paths\BadGuyAttackerPath</path>
+    <path>paths\BadGuyLazerShipPathP1</path>
+    <path>paths\BadGuyLazerShipPathP2</path>
+    <path>paths\BadGuyLazerShipPathP3</path>
+    <path>paths\BadGuyLazerShipPathP4</path>
+  </paths>
   <objects name="objects">
-    <object>objects\ShootingStar</object>
     <objects name="Ship">
-      <object>objects\Player</object>
       <object>objects\EngineFlame</object>
+      <object>objects\Guns</object>
+      <objects name="Ammo">
+        <object>objects\Shot</object>
+      </objects>
+      <object>objects\Player</object>
     </objects>
-    <object>objects\Edge</object>
     <objects name="Astroids">
       <object>objects\Astroid</object>
     </objects>
     <objects name="SystemObjects">
       <object>objects\AstroidMaster</object>
-      <object>objects\ParticleMaster</object>
       <object>objects\StarSpawner</object>
+      <object>objects\GameController</object>
+    </objects>
+    <objects name="Explosion">
+      <objects name="Small">
+        <object>objects\ExplosionT_S</object>
+        <object>objects\ExplosionM_S</object>
+        <object>objects\ExplosionB_S</object>
+        <object>objects\ExplosionObj_S</object>
+      </objects>
+      <objects name="Nomral">
+        <object>objects\ExplosionT</object>
+        <object>objects\ExplosionM</object>
+        <object>objects\ExplosionB</object>
+        <object>objects\ExplosionObj</object>
+      </objects>
+      <objects name="Large">
+        <object>objects\ExplosionT_L</object>
+        <object>objects\ExplosionM_L</object>
+        <object>objects\ExplosionB_L</object>
+        <object>objects\ExplosionObj_L</object>
+      </objects>
+      <object>objects\LaserSpark</object>
+    </objects>
+    <objects name="LevelObjects">
+      <object>objects\ShootingStar</object>
+      <objects name="Planets">
+        <object>objects\Halon</object>
+      </objects>
+    </objects>
+    <objects name="BadGuys">
+      <objects name="Ammo">
+        <object>objects\RedShot</object>
+        <object>objects\RedShotLarger</object>
+        <object>objects\TurrentMissle</object>
+        <object>objects\BadGuyMissleSmall</object>
+        <object>objects\ShotSpawner</object>
+        <object>objects\BadGuyShotShell</object>
+        <object>objects\BadGuyLazerBeam</object>
+        <object>objects\LaserSpawner</object>
+      </objects>
+      <objects name="BadGuySpawners">
+        <object>objects\BadGuySmallSpawn</object>
+        <object>objects\SpinnerSpawn</object>
+      </objects>
+      <objects name="BadGuys">
+        <object>objects\BadGuySmall</object>
+        <object>objects\BadGuysAttacker</object>
+        <object>objects\BadGuyHoverMissleTurrent</object>
+        <object>objects\BadGuyLarger</object>
+        <object>objects\BadGuyLazerShip</object>
+        <object>objects\Spinner</object>
+        <object>objects\BadGuyHoverGunTurrent</object>
+        <object>objects\BadGuyTurrentGun</object>
+        <object>objects\BadGuyMissleTurrent</object>
+        <object>objects\BadGuyShotGunner</object>
+        <object>objects\BadGuyFlame</object>
+        <object>objects\BadGuyFlame2</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Level1</room>
+    <room>rooms\SpaceLevel1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
