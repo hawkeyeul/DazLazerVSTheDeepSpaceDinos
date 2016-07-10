@@ -655,7 +655,7 @@
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>BadGuyLazer2</object>
+            <object>BadGuyLazer</object>
           </argument>
           <argument>
             <kind>0</kind>

@@ -88,6 +88,9 @@
         <sprite>sprites\TurrentMissle_Sprite</sprite>
         <sprite>sprites\TurrenMissleHolderLoaded</sprite>
         <sprite>sprites\HoverTurrent</sprite>
+        <sprite>sprites\BadGuyTurrent_Sprite</sprite>
+        <sprite>sprites\BossTurrentGun_Sprite</sprite>
+        <sprite>sprites\BossTurrent_Sprite</sprite>
       </sprites>
       <sprites name="BadGuyMisc">
         <sprite>sprites\BadGuySpawner</sprite>
@@ -111,6 +114,8 @@
           <sprite>sprites\BadGuyBossHit_Sprite</sprite>
           <sprite>sprites\BadGuyBossHit50_Sprite</sprite>
           <sprite>sprites\BadGuyBossHit75_Sprite</sprite>
+          <sprite>sprites\BossHitLine</sprite>
+          <sprite>sprites\BossHitEye</sprite>
         </sprites>
       </sprites>
     </sprites>
@@ -126,6 +131,7 @@
     <path>paths\BadGuyLazerShipPathP2</path>
     <path>paths\BadGuyLazerShipPathP3</path>
     <path>paths\BadGuyLazerShipPathP4</path>
+    <path>paths\Level1Boss_Path</path>
   </paths>
   <objects name="objects">
     <objects name="Ship">
@@ -180,7 +186,6 @@
         <object>objects\ShotSpawner</object>
         <object>objects\BadGuyShotShell</object>
         <object>objects\BadGuyLazer</object>
-        <object>objects\BadGuyLazer2</object>
         <object>objects\LaserSpawner</object>
       </objects>
       <objects name="BadGuySpawners">
@@ -195,14 +200,27 @@
         <object>objects\Spinner</object>
         <object>objects\BadGuyHoverGunTurrent</object>
         <object>objects\BadGuyTurrentGun</object>
-        <object>objects\BadGuyLazerShip</object>
         <object>objects\BadGuyMissleTurrent</object>
+        <object>objects\BadGuyLazerShip</object>
         <object>objects\BadGuyShotGunner</object>
         <object>objects\BadGuyFlame</object>
         <object>objects\BadGuyFlame2</object>
       </objects>
       <objects name="Bosses">
         <object>objects\Level1Boss</object>
+        <object>objects\Level1BossHitLine50</object>
+        <object>objects\Level1BossHitLine75</object>
+        <object>objects\Level1BossEye</object>
+        <objects name="Turrent">
+          <object>objects\BossTurrentGunStatic2</object>
+          <object>objects\BossTurrentGunStatic</object>
+          <object>objects\BossTurrentStatic2</object>
+          <object>objects\BossTurrentStatic</object>
+          <object>objects\BossTurrent</object>
+          <object>objects\BossTurrent2</object>
+          <object>objects\BossTurrentGun</object>
+          <object>objects\BossTurrentGun2</object>
+        </objects>
       </objects>
     </objects>
   </objects>
