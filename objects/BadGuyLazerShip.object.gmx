@@ -97,11 +97,35 @@
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>MaxHealth</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>25</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>Health</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>10</string>
+            <string>MaxHealth</string>
           </argument>
         </arguments>
       </action>
@@ -211,7 +235,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>7</string>
+            <string>MaxHealth * .5</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -295,7 +319,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>4</string>
+            <string>MaxHealth * .25</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -405,7 +429,41 @@
           </argument>
           <argument>
             <kind>4</kind>
-            <string>2</string>
+            <string>1</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>119</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_path</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>8</kind>
+            <path>BadGuyLazerShipPathP2</path>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -561,11 +619,7 @@
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>BadGuyLazerBeam</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>-75</string>
+            <object>BadGuyLazer</object>
           </argument>
           <argument>
             <kind>0</kind>
@@ -573,7 +627,11 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>5</string>
+            <string>-40</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -597,11 +655,11 @@
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>BadGuyLazerBeam</object>
+            <object>BadGuyLazer2</object>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>-75</string>
+            <string>-40</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -609,7 +667,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>5</string>
+            <string>0</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -747,7 +805,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>7</string>
+            <string>MaxHealth * .5</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -831,7 +889,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>4</string>
+            <string>MaxHealth * .25</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -1243,33 +1301,49 @@
       </action>
       <action>
         <libid>1</libid>
-        <id>119</id>
+        <id>301</id>
         <kind>0</kind>
-        <userelative>0</userelative>
+        <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_path</functionname>
+        <functionname>action_set_alarm</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>8</kind>
-            <path>BadGuyLazerShipPathP2</path>
+            <kind>0</kind>
+            <string>300</string>
           </argument>
+          <argument>
+            <kind>4</kind>
+            <string>4</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>301</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_alarm</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
           <argument>
             <kind>0</kind>
             <string>1</string>
           </argument>
           <argument>
             <kind>4</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
+            <string>8</string>
           </argument>
         </arguments>
       </action>
@@ -1345,11 +1419,11 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>1</string>
+            <string>300</string>
           </argument>
           <argument>
             <kind>4</kind>
-            <string>8</string>
+            <string>2</string>
           </argument>
         </arguments>
       </action>
@@ -1369,11 +1443,11 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>300</string>
+            <string>1</string>
           </argument>
           <argument>
             <kind>4</kind>
-            <string>2</string>
+            <string>8</string>
           </argument>
         </arguments>
       </action>
@@ -1449,11 +1523,11 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>1</string>
+            <string>300</string>
           </argument>
           <argument>
             <kind>4</kind>
-            <string>8</string>
+            <string>3</string>
           </argument>
         </arguments>
       </action>
@@ -1473,11 +1547,11 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>300</string>
+            <string>1</string>
           </argument>
           <argument>
             <kind>4</kind>
-            <string>3</string>
+            <string>8</string>
           </argument>
         </arguments>
       </action>

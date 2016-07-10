@@ -2192,7 +2192,7 @@
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="4" ename="BadGuyLazerBeam">
+    <event eventtype="4" ename="BadGuyLazer">
       <action>
         <libid>1</libid>
         <id>612</id>

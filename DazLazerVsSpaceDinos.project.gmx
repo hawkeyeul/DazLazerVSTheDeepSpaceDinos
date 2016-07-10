@@ -102,6 +102,17 @@
         <sprite>sprites\BadGuyLazerShip100Hit_Sprite</sprite>
       </sprites>
       <sprite>sprites\BadGuyLazer_Sprite</sprite>
+      <sprites name="BadGuyBossLevel1">
+        <sprite>sprites\BadGuyBoss_Sprite</sprite>
+        <sprite>sprites\BadGuyBoss50_Sprite</sprite>
+        <sprite>sprites\BadGuyBoss75_Sprite</sprite>
+        <sprite>sprites\BadGuyBoss100_Sprite</sprite>
+        <sprites name="BadGuyBossHit">
+          <sprite>sprites\BadGuyBossHit_Sprite</sprite>
+          <sprite>sprites\BadGuyBossHit50_Sprite</sprite>
+          <sprite>sprites\BadGuyBossHit75_Sprite</sprite>
+        </sprites>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -168,7 +179,8 @@
         <object>objects\BadGuyMissleSmall</object>
         <object>objects\ShotSpawner</object>
         <object>objects\BadGuyShotShell</object>
-        <object>objects\BadGuyLazerBeam</object>
+        <object>objects\BadGuyLazer</object>
+        <object>objects\BadGuyLazer2</object>
         <object>objects\LaserSpawner</object>
       </objects>
       <objects name="BadGuySpawners">
@@ -180,14 +192,17 @@
         <object>objects\BadGuysAttacker</object>
         <object>objects\BadGuyHoverMissleTurrent</object>
         <object>objects\BadGuyLarger</object>
-        <object>objects\BadGuyLazerShip</object>
         <object>objects\Spinner</object>
         <object>objects\BadGuyHoverGunTurrent</object>
         <object>objects\BadGuyTurrentGun</object>
+        <object>objects\BadGuyLazerShip</object>
         <object>objects\BadGuyMissleTurrent</object>
         <object>objects\BadGuyShotGunner</object>
         <object>objects\BadGuyFlame</object>
         <object>objects\BadGuyFlame2</object>
+      </objects>
+      <objects name="Bosses">
+        <object>objects\Level1Boss</object>
       </objects>
     </objects>
   </objects>

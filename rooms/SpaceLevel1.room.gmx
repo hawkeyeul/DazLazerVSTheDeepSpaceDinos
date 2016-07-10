@@ -56,6 +56,7 @@
     <instance objName="GameController" x="160" y="320" name="inst_DEE76381" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Halon" x="3520" y="416" name="inst_147C9AFB" locked="0" code="" scaleX="2.5" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="BadGuyLazerShip" x="1984" y="512" name="inst_3A42E0CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Level1Boss" x="1632" y="576" name="inst_CF6277A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
