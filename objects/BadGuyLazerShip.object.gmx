@@ -173,7 +173,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>5</string>
+            <string>2</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -655,7 +655,7 @@
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>BadGuyLazer2</object>
+            <object>BadGuyLazer</object>
           </argument>
           <argument>
             <kind>0</kind>

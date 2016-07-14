@@ -60,11 +60,17 @@
     </sprites>
     <sprites name="BadGuys">
       <sprite>sprites\BadGuy</sprite>
+      <sprite>sprites\BossBadGuySpawn</sprite>
       <sprites name="Ammo">
         <sprite>sprites\RedShot_SPT</sprite>
         <sprite>sprites\RedShotLarger_Sprite</sprite>
         <sprite>sprites\Bullet</sprite>
         <sprite>sprites\BadGuyMissleSmaller_Sprite</sprite>
+        <sprite>sprites\BadGuyLazer_Sprite</sprite>
+        <sprite>sprites\BossLaser</sprite>
+        <sprite>sprites\LaserFire</sprite>
+        <sprite>sprites\LazerFinialFlash</sprite>
+        <sprite>sprites\SmallBadGuyShots_Sprites</sprite>
       </sprites>
       <sprite>sprites\Spinner_Sprite</sprite>
       <sprite>sprites\BadGuyShotGun</sprite>
@@ -88,6 +94,11 @@
         <sprite>sprites\TurrentMissle_Sprite</sprite>
         <sprite>sprites\TurrenMissleHolderLoaded</sprite>
         <sprite>sprites\HoverTurrent</sprite>
+        <sprite>sprites\BadGuyTurrent_Sprite</sprite>
+        <sprite>sprites\BossTurrentGun_Sprite</sprite>
+        <sprite>sprites\BossTurrentGunHit_Sprite</sprite>
+        <sprite>sprites\BossTurrent_Sprite</sprite>
+        <sprite>sprites\BossTurrentHit_Sprite</sprite>
       </sprites>
       <sprites name="BadGuyMisc">
         <sprite>sprites\BadGuySpawner</sprite>
@@ -101,7 +112,6 @@
         <sprite>sprites\BadGuyLazerShip100_Sprite</sprite>
         <sprite>sprites\BadGuyLazerShip100Hit_Sprite</sprite>
       </sprites>
-      <sprite>sprites\BadGuyLazer_Sprite</sprite>
       <sprites name="BadGuyBossLevel1">
         <sprite>sprites\BadGuyBoss_Sprite</sprite>
         <sprite>sprites\BadGuyBoss50_Sprite</sprite>
@@ -111,6 +121,8 @@
           <sprite>sprites\BadGuyBossHit_Sprite</sprite>
           <sprite>sprites\BadGuyBossHit50_Sprite</sprite>
           <sprite>sprites\BadGuyBossHit75_Sprite</sprite>
+          <sprite>sprites\BossHitLine</sprite>
+          <sprite>sprites\BossHitEye</sprite>
         </sprites>
       </sprites>
     </sprites>
@@ -126,7 +138,17 @@
     <path>paths\BadGuyLazerShipPathP2</path>
     <path>paths\BadGuyLazerShipPathP3</path>
     <path>paths\BadGuyLazerShipPathP4</path>
+    <path>paths\Level1Boss_Path</path>
+    <path>paths\BadGuy_BossLaunch</path>
+    <path>paths\BadGuy_BossMain_Rightx</path>
+    <path>paths\BadGuy_BossMain_Left</path>
+    <path>paths\BadGuy_BossMain_Right</path>
+    <path>paths\BGPath</path>
   </paths>
+  <fonts name="fonts">
+    <font>fonts\gameover</font>
+    <font>fonts\ScoreFont</font>
+  </fonts>
   <objects name="objects">
     <objects name="Ship">
       <object>objects\EngineFlame</object>
@@ -143,6 +165,12 @@
       <object>objects\AstroidMaster</object>
       <object>objects\StarSpawner</object>
       <object>objects\GameController</object>
+      <object>objects\VariableDisplay</object>
+      <object>objects\PlayerSpawner</object>
+      <object>objects\DrawScores</object>
+      <object>objects\GameOverDisplay</object>
+      <object>objects\You_Loose0</object>
+      <object>objects\Level1_Director</object>
     </objects>
     <objects name="Explosion">
       <objects name="Small">
@@ -174,40 +202,60 @@
     <objects name="BadGuys">
       <objects name="Ammo">
         <object>objects\RedShot</object>
+        <object>objects\SmallDoubleShot</object>
         <object>objects\RedShotLarger</object>
         <object>objects\TurrentMissle</object>
         <object>objects\BadGuyMissleSmall</object>
         <object>objects\ShotSpawner</object>
         <object>objects\BadGuyShotShell</object>
         <object>objects\BadGuyLazer</object>
-        <object>objects\BadGuyLazer2</object>
         <object>objects\LaserSpawner</object>
       </objects>
       <objects name="BadGuySpawners">
-        <object>objects\BadGuySmallSpawn</object>
-        <object>objects\SpinnerSpawn</object>
+        <object>objects\Spinner_Spawner</object>
+        <object>objects\BadGuyAttacker_Spawner</object>
+        <object>objects\BadGuyLarger_Spawner</object>
+        <object>objects\BadGuySmall_Spawner</object>
+        <object>objects\BadGuyLazerShip_Spawner</object>
+        <object>objects\Level1Boss_Spawner</object>
       </objects>
       <objects name="BadGuys">
-        <object>objects\BadGuySmall</object>
         <object>objects\BadGuysAttacker</object>
         <object>objects\BadGuyHoverMissleTurrent</object>
         <object>objects\BadGuyLarger</object>
         <object>objects\Spinner</object>
         <object>objects\BadGuyHoverGunTurrent</object>
         <object>objects\BadGuyTurrentGun</object>
-        <object>objects\BadGuyLazerShip</object>
         <object>objects\BadGuyMissleTurrent</object>
+        <object>objects\BadGuyLazerShip</object>
         <object>objects\BadGuyShotGunner</object>
         <object>objects\BadGuyFlame</object>
         <object>objects\BadGuyFlame2</object>
+        <object>objects\BadGuySmall</object>
+        <object>objects\BadGuySmallRight</object>
+        <object>objects\BadGuySmallLeft</object>
       </objects>
       <objects name="Bosses">
+        <object>objects\BadGuyDeckSpawnRight</object>
+        <object>objects\BadGuyDeckSpawnLeft</object>
         <object>objects\Level1Boss</object>
+        <object>objects\Level1BossEye</object>
+        <object>objects\Level1BossHitLine50</object>
+        <object>objects\Level1BossHitLine75</object>
+        <objects name="Turrent">
+          <object>objects\BossTurrentGunLeft</object>
+          <object>objects\BossTurrentGunRight</object>
+          <object>objects\BossTurrentLeft</object>
+          <object>objects\BossTurrentRight</object>
+        </objects>
+        <object>objects\BossLazer</object>
       </objects>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\SpaceLevel1</room>
+    <room>rooms\End_Game</room>
+    <room>rooms\You_Loose</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
