@@ -143,6 +143,7 @@
     <path>paths\BadGuy_BossMain_Rightx</path>
     <path>paths\BadGuy_BossMain_Left</path>
     <path>paths\BadGuy_BossMain_Right</path>
+    <path>paths\BGPath</path>
   </paths>
   <fonts name="fonts">
     <font>fonts\gameover</font>
@@ -168,6 +169,8 @@
       <object>objects\PlayerSpawner</object>
       <object>objects\DrawScores</object>
       <object>objects\GameOverDisplay</object>
+      <object>objects\You_Loose0</object>
+      <object>objects\Level1_Director</object>
     </objects>
     <objects name="Explosion">
       <objects name="Small">
@@ -209,11 +212,15 @@
         <object>objects\LaserSpawner</object>
       </objects>
       <objects name="BadGuySpawners">
-        <object>objects\SpinnerSpawn</object>
+        <object>objects\Spinner_Spawner</object>
+        <object>objects\BadGuyAttacker_Spawner</object>
+        <object>objects\BadGuyLarger_Spawner</object>
+        <object>objects\BadGuySmall_Spawner</object>
+        <object>objects\BadGuyLazerShip_Spawner</object>
+        <object>objects\Level1Boss_Spawner</object>
       </objects>
       <objects name="BadGuys">
         <object>objects\BadGuysAttacker</object>
-        <object>objects\BadGuySmallSpawn</object>
         <object>objects\BadGuyHoverMissleTurrent</object>
         <object>objects\BadGuyLarger</object>
         <object>objects\Spinner</object>
@@ -248,6 +255,7 @@
   <rooms name="rooms">
     <room>rooms\SpaceLevel1</room>
     <room>rooms\End_Game</room>
+    <room>rooms\You_Loose</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

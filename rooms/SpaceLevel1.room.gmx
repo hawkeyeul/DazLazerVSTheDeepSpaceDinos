@@ -52,11 +52,12 @@
   </views>
   <instances>
     <instance objName="StarSpawner" x="1888" y="64" name="inst_150D0C70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="AstroidMaster" x="512" y="224" name="inst_AAB91ED0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="GameController" x="160" y="320" name="inst_DEE76381" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Level1Boss" x="2048" y="544" name="inst_57560132" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="AstroidMaster" x="1952" y="384" name="inst_AAB91ED0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="GameController" x="1952" y="448" name="inst_DEE76381" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="PlayerSpawner" x="96" y="544" name="inst_0A34056F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="DrawScores" x="32" y="32" name="inst_8D93B3AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="EngineFlame" x="-160" y="288" name="inst_ACE8A4F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Level1_Director" x="2080" y="480" name="inst_D980E210" locked="0" code="" scaleX="-2" scaleY="-3" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
